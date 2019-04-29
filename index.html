@@ -2,32 +2,174 @@
 <html>
 <head>
 	<title></title>
+
+	<!-- Set viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Using LESS -->
 	<link rel="stylesheet/less" type="text/css" href="./css/styles.less"/>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
-	<link rel="stylesheet" href="./css/flexboxgrid.min.css" type="text/css">
+
+	<!-- Importing font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<!-- Import font awesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
 </head>
 <body>
 	<div class="main">
 		<!-- START OF HERO SECTION -->
-		<div class="row">
-			<div class="col-xs">
-				<div class="hero">
-					<div class="row">
-						<div class="col-xs">
-							<div class="badge"></div>
-						</div>
-						<div class="col-xs">
-							<div class="customer-logo">
-								<div class="customer-logo__img"></div>
-								<p>Library System</p>
-							</div>
-						</div>
+		<div class="hero">
+			
+			<div class="badge"></div>
+			<div class="customer-logo">
+				<div class="customer-logo__img"></div>
+				<p>Library System</p>
+			</div>
+			<!-- Hero text -->
+			<div class="hero__info-container">
+				<h1>GALE <span>ACADEMIC ONEFILE</span></h1>
+				<form>
+					<div class="hero__search-drop-arrow">
+						<select class="hero__search-drop" name="search-filter">
+							<option>Basic</option>
+							<option>Basic</option>
+						</select>
 					</div>
-				</div>
+					<input type="text" class="hero__search-bar" name="search-bar" placeholder="Start your search..." />
+					<button type="submit" class="hero__search-submit"><span class="fas fa-search"></span></button>
+				</form>
+				<p><a href="#" class="hero__advance-search">Advanced Search</a></p>
 			</div>
 		</div>
 		<!-- END OF HERO SECTION -->
+		<!-- Auxilary filters -->
+		<div class="aux-filters">
+			<div class="aux-filters__item" style="width: 120px;">
+				<i class="fas fa-highlighter af-icon"></i>
+				<p>Notes &amp; Highlights</p>
+			</div>
+			<div class="aux-filters__item" style="width: 60px;">
+				<i class="fas fa-link af-icon"></i>
+				<p>Get Link</p>
+			</div>
+			<div class="aux-filters__item" style="width: 100px;">
+				<i class="fas fa-history af-icon"></i>
+				<p>Search History</p>
+			</div>
+			<div class="aux-filters__item" style="width: 60px;">
+				<i class="fas fa-list-ul af-icon"></i>
+				<p>Title List</p>
+			</div>
+			<div class="aux-filters__item" style="width: 100px;">
+				<i class="far fa-lightbulb af-icon"></i>
+				<p>Browse Topics</p>
+			</div>
+		</div>
+		<!-- END OF AUXILARY FILTERS -->
+		<!-- Content section -->
+		<div class="content">
+			<!-- Browse Topics section -->
+			<div class="browse-topics">
+				<h2 class="content-header">BROWSE TOPICS BY DSCIPLINE</h2>
+				<div class="accent-box"></div>
+				<p class="browse-topics__description">Explore over 500 topics broken down by discipline for targeted results on your interests.</p>
+				<div class="browse-topics__topics-container">
+					<div id="topics-container"></div>
+				</div>
+			</div>
+			<!-- END OF BROWSE TOPICS SECTION -->
+
+			<!-- Search tools section -->
+			<div class="search-tools">
+				<h2 class="content-header">SEARCH TOOLS</h2>
+				<div class="accent-box"></div>
+				<div class="item">
+					<h3>Topic Finder</h3>
+					<img src="./img/chart-pie.svg" role="presentation" alt="" class="item__img" />
+					<div class="item__description">
+						<p>Visualize connections between search and terms and topics and view popular articles 
+						for those topics.<br /><br />
+						<a href="#" class="go-to-link">Go to Topic Finder &#187;</a> 
+						</p>
+
+					</div>
+				</div>
+				<div class="item">
+					<h3>Subject Guide Search</h3>
+					<img src="./img/list-alt.svg" role="presentation" alt="" class="item__img" />
+					<div class="item__description">
+						<p>Search our Subject Index to find articles tagged with exactly the subject you're looking for.<br /><br />
+						<a href="#" class="go-to-link">Go to Subject Guide Search &#187;</a> 
+						</p>
+
+					</div>
+				</div>
+				<div class="item">
+					<h3>Publication Search</h3>
+					<img src="./img/books.svg" role="presentation" alt="" class="item__img" />
+					<div class="item__description">
+						<p>Search through all the publication titles available in Gale Academic OneFile.<br /><br />
+						<a href="#" class="go-to-link">Go to Publication Search &#187;</a> 
+						</p>
+
+					</div>
+				</div>
+			</div>
+			<!-- END OF SEARCH TOOLS SECTION -->
+
+			<div class="onefile-count">
+				<p><em>Gale Academic OneFile</em> contains <strong>100,259,670</strong> articles. Updated <strong>February 21, 2019.</strong></p>
+			</div>
+		</div>
+		<!-- END OF CONTENT SECTION -->
+
+		<!-- Footer section -->
+		<div class="footer">
+			<div class="footer__container">
+				<div>
+					<img src="./img/gale-logo-footer.png" role="presentation" alt="Gale logo" style="width: 199px; height: 60px;" />
+				</div>
+				<div class="footer__links">
+					<a href="#">ABOUT</a>
+					<a href="#">HELP</a>
+					<a href="#">CONTACT US</a>
+					<a href="#">TERMS OF USE</a>
+					<a href="#">PRIVACY</a>
+					<a href="#">ACCESSIBILITY</a>
+					<a href="#">END SESSION</a>
+				</div>
+				<div>
+					<img src="./img/empower-logo.png" role="presentation" alt="Empower logo" style="width: 254px; height: 50px;" />
+				</div>
+			</div>
+		</div>
+		<!-- END OF FOOTER SECTION -->
 	</div>
+	<script type="text/javascript">
+		let topicsArr = ['Biology', 
+		'Chemestry', 
+		'Criminal Justice', 
+		'Economics', 
+		'Environmental Science', 
+		'History', 
+		'Marketing', 
+		'Political Science', 
+		'Psychology'];
+		window.addEventListener('DOMContentLoaded', (event) => {
+			let btn = null;
+			for(let i = 0; topicsArr.length > i; i++) {
+				btn = document.createElement('BUTTON');
+				btn.innerHTML = topicsArr[i];
+				document.getElementById('topics-container').appendChild(btn);
+			}
+			let topicsATag = document.createElement('a');
+			topicsATag.setAttribute('href', '#');
+			topicsATag.setAttribute('class', 'go-to-link');
+			topicsATag.innerHTML = 'View All Topics &#187;';
+			document.getElementById('topics-container').appendChild(topicsATag);
+		});
+	</script>
 </body>
 </html>
